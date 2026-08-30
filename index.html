@@ -42,11 +42,20 @@
     <!-- ============ HEADER ============ -->
     <header class="site-header" id="top">
       <div class="container header-inner">
-        <a href="#top" class="brand" aria-label="Emanuele — torna all'inizio">
+        <a
+          href="#top"
+          class="brand"
+          aria-label="Torna all'inizio"
+          onclick="
+            event.preventDefault();
+            window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+          "
+        >
           <span class="brand-mark" aria-hidden="true">&lt;e /&gt;</span>
-          <span class="brand-name"
-            >emanuele<span class="accent">.dev</span></span
-          >
+
+          <span class="brand-name">
+            emanuele<span class="accent">.dev</span>
+          </span>
         </a>
 
         <nav class="main-nav" aria-label="Navigazione principale">
@@ -54,7 +63,7 @@
             <li><a class="nav-link" href="#chi-sono">Chi sono</a></li>
             <li><a class="nav-link" href="#competenze">Competenze</a></li>
             <li><a class="nav-link" href="#progetti">Progetti</a></li>
-            <li><a class="nav-link" href="works.html">Lavori</a> </li>
+            <li><a class="nav-link" href="works.html">Lavori</a></li>
             <li><a class="nav-link" href="#servizi">Servizi</a></li>
             <li><a class="nav-link" href="#percorso">Percorso</a></li>
             <li><a class="nav-link" href="#contatti">Contatti</a></li>
@@ -101,7 +110,8 @@
           </li>
           <li>
             <a href="works.html" style="--i: 3"
-            ><span class="menu-idx">04</span>Lavori</a>
+              ><span class="menu-idx">04</span>Lavori</a
+            >
           </li>
           <li>
             <a href="#servizi" style="--i: 4"
